@@ -1,0 +1,68 @@
+<div class="bg-shape shape-a"></div>
+<div class="bg-shape shape-b"></div>
+<div class="bg-sparkles" aria-hidden="true"></div>
+
+<main class="app">
+  <header class="topbar">
+    <div>
+      <p class="level-badge">Level Progress</p>
+      <h1>{{ title }}</h1>
+    </div>
+    <button id="new-game-btn" type="button" (click)="onNewGame()">Restart Level</button>
+  </header>
+
+  <section class="hud">
+    <section class="stats" aria-label="Game stats">
+      <article>
+        <h2>Score</h2>
+        <p id="score" #score>0</p>
+      </article>
+      <article>
+        <h2>Moves Left</h2>
+        <p id="moves" #moves>15</p>
+      </article>
+      <article>
+        <h2>Level</h2>
+        <p id="level" #level>{{ levelNumber }}</p>
+      </article>
+    </section>
+
+    <section class="meter-wrap" aria-label="Moves meter">
+      <div class="meter-head">
+        <p>Moves Power</p>
+        <p id="meter-value" #meterValue>15/15</p>
+      </div>
+      <div class="moves-meter">
+        <div id="moves-meter-fill" #meterFill class="moves-meter-fill"></div>
+      </div>
+    </section>
+  </section>
+
+  <section class="game-layout">
+    <section class="board-panel">
+      <section class="board-wrap">
+        <div
+          id="board"
+          #board
+          class="board"
+          role="grid"
+          aria-label="Candy board"
+          (click)="onBoardClick($event)"
+        ></div>
+      </section>
+      <p id="status" #status class="status">
+        Level ready: make 3-match combos, craft specials, and crush the target score.
+      </p>
+    </section>
+  </section>
+
+  <div id="vibe-announcer" #announcer class="vibe-announcer" aria-live="polite"></div>
+
+  <section class="flair-strip" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </section>
+</main>

@@ -1,0 +1,26 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="choco" cx="34%" cy="24%" r="76%">
+      <stop offset="0" stop-color="#8f6141"/>
+      <stop offset="0.45" stop-color="#573222"/>
+      <stop offset="1" stop-color="#2a170f"/>
+    </radialGradient>
+    <filter id="ds" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="4.8" stdDeviation="3.8" flood-color="#000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <g filter="url(#ds)">
+    <circle cx="50" cy="50" r="30" fill="url(#choco)"/>
+    <circle cx="38" cy="34" r="3.3" fill="#ffffff"/>
+    <circle cx="47" cy="30" r="3.2" fill="#4ac1ff"/>
+    <circle cx="58" cy="31" r="3.2" fill="#ffd85c"/>
+    <circle cx="67" cy="37" r="3.1" fill="#69de63"/>
+    <circle cx="72" cy="48" r="3.2" fill="#ff9a45"/>
+    <circle cx="69" cy="60" r="3.2" fill="#e868ff"/>
+    <circle cx="60" cy="69" r="3.1" fill="#ffffff"/>
+    <circle cx="48" cy="71" r="3.1" fill="#ff4f58"/>
+    <circle cx="37" cy="66" r="3.1" fill="#ffd85c"/>
+    <circle cx="30" cy="56" r="3.1" fill="#69de63"/>
+    <circle cx="30" cy="45" r="3" fill="#e868ff"/>
+  </g>
+</svg>

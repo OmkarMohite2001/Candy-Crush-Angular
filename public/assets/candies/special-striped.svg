@@ -1,0 +1,26 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="g" cx="31%" cy="24%" r="75%">
+      <stop offset="0" stop-color="#c9f2ff"/>
+      <stop offset="0.48" stop-color="#5fb4ff"/>
+      <stop offset="1" stop-color="#2b61cb"/>
+    </radialGradient>
+    <clipPath id="clip">
+      <circle cx="50" cy="50" r="30"/>
+    </clipPath>
+    <filter id="ds" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="4.8" stdDeviation="3.6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <g filter="url(#ds)">
+    <circle cx="50" cy="50" r="30" fill="url(#g)"/>
+    <g clip-path="url(#clip)" opacity="0.96">
+      <rect x="14" y="22" width="72" height="9" rx="5" fill="#ffffff"/>
+      <rect x="12" y="37" width="76" height="9" rx="5" fill="#ffffff"/>
+      <rect x="11" y="52" width="78" height="9" rx="5" fill="#ffffff"/>
+      <rect x="12" y="67" width="76" height="9" rx="5" fill="#ffffff"/>
+    </g>
+    <ellipse cx="40" cy="34" rx="10" ry="6" fill="#ffffff" opacity="0.45"/>
+  </g>
+</svg>
+
